@@ -86,7 +86,7 @@ section#s1 {
     font-size: 3.5vw;
     font-weight: normal;
     background-color: rgb(51, 51, 51);
-    color: var(--cor1);
+    color: var(--cor0);
     box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
     background-size: cover;
     background-attachment: fixed;
