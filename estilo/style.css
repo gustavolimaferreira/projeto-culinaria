@@ -4,18 +4,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
 
+@font-face {
+    font-family: campana;
+    src: url(../fontes/CampanaScript.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
-    --cor0:#F6F4D2;
+    --cor0:#f8f7e5;
     --cor1:#CBDFBD;
     --cor2:#D4E09B;
     --cor3:#F19C79;
-    --cor4:#814730;
+    --cor4:#e7717b;
     --cor5:#A44A3F;
     --cor6:#47150e;
 
     --font-padrao: Verdana Helvetica, Arial, sans-serif;
-    --font-destaque: 'Imperial Script', cursive;
+    --font-destaque: 'campana', cursive;
     --font-titulos: 'Faculty Glyphic', cursive;
+    --font-cursiva: 'Imperial Script', cursive;
 }
 
 * {
@@ -24,15 +32,14 @@
 }
 
 body {
-    background-color: var(--cor0);
+    background-image: linear-gradient(to right, rgb(250, 176, 176), rgb(252, 225, 225));
     font-family: var(--font-padrao);
 }
 
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
-    min-height: 150px;
-    
-    padding-top: 40px;
+    min-height: 150px;    
+    padding-top: 20px;
 }
 
 header > h1 {
@@ -40,8 +47,8 @@ header > h1 {
     color: white;
     font-family: var(--font-destaque);
     font-weight: normal;
-    font-size: 7em;
-    margin-bottom: 20px;
+    font-size: 5em;
+    margin-bottom: 5px;
     text-shadow: 2px 2px 0px rgba(0,0,0, 0.267);
 }
 
@@ -55,6 +62,7 @@ header > p {
     margin: auto;
     margin-bottom: 30px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+    text-align: center;
 }
 
 nav {
@@ -64,7 +72,7 @@ nav {
 }
 
 nav > a {
-    color: var(--cor1);
+    color: white;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -86,7 +94,7 @@ section#s1 {
     font-size: 3.5vw;
     font-weight: normal;
     background-color: rgb(51, 51, 51);
-    color: var(--cor0);
+    color: var(--cor4);
     box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
     background-size: cover;
     background-attachment: fixed;
@@ -95,43 +103,23 @@ section#s1 {
 }
 
 section#s1 > h1 {
-    font-size: 2em;
+    font-family: var(--font-cursiva);
+    font-size: 3em;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 0px rgba(0,0,0, 0.267);
+    text-shadow: 1px 1px 0px rgba(0,0,0, 0.267);
 }
 
 section#s1 > h2 {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 0px rgba(0,0,0, 0.267);
+    text-shadow: 1px 1px 0px rgba(0,0,0, 0.267);
     font-family: 'Times New Roman', Times, serif;
-}
-
-section#s1 > button {
-    background-image: linear-gradient(to bottom, rgb(0, 175, 0), rgb(90, 209, 90));
-    padding: 10px;
-    border-radius: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-}
-
-section#s1 > button > a {
-    text-decoration: none;
-    color: rgb(233, 233, 233);
-    font-weight: 600;
-    font-size: 1.1em;
-    transition-duration: 0.5s;
-}
-
-section#s1 > button:hover {
-    background-image: linear-gradient(to bottom, rgb(90, 209, 90), rgb(0, 175, 0));
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.267);
 }
 
 h2#ph2 {
     text-align: center;
     font-family: var(--font-titulos);
-    font-size: 2.5em;
+    font-size: 4em;
     margin-top: 40px;
     margin-bottom: 20px;
     color: var(--cor6);
@@ -194,9 +182,15 @@ main#dts3 {
 }
 
 article.art1 {
-    display: flex; 
+    display: flex;
     align-items: start;    
-    width: 450px;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+}
+
+a > article > picture > img {
+    border-radius: 10px;
 }
 
 div {
@@ -214,8 +208,10 @@ main > a {
 }
 
 main > a:hover {
-    color: var(--cor3);
+    color: var(--cor6);
     text-shadow: 1px 1px 0px rgba(0,0,0, 0.267);
+    background-color: rgba(255, 208, 208, 0.685);
+    border-radius: 10px;
 }
 
 section#s4 {
@@ -226,26 +222,22 @@ section#s4 {
     font-family: var(--font-titulos);
     font-size: 3.5vw;
     font-weight: normal;
-    background-color: rgb(51, 51, 51);
-    
+    background-color: #333333;    
     box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
 }
 
 section#s4 > h2 {
     text-align: center;
     font-size: 2.5em;
-    color: var(--cor3);
-}
-
-ul {
-    
-    margin-top: 30px;
-    
+    color: white;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, var(--cor4), #333333);
+    padding: 20px;
 }
 
 li > a {
-    color: var(--cor1);
-    font-size: 1.5em;
+    color: white;
+    font-size: 1em;
     text-decoration: none;
     transition-duration: 0.5s;
 }
@@ -255,16 +247,19 @@ li > a:hover {
     text-shadow: 1px 1px 0px rgba(0,0,0, 0.267);
 }
 
+li {
+    color: var(--cor4);
+}
+
 footer {
     background-color: var(--cor4);
     color: var(--cor1);
     text-align: center;
-    padding: 10px;
-    font-size: 1.3em;
-    box-shadow: 0px -7px 7px rgba(0, 0, 0, 0.192);
+    padding: 3px;
+    font-size: 1.1em;
 }
 #final {
-    color: var(--cor1);
+    color: black;
     text-decoration: none;
     font-weight: bold;
     transition-duration: 0.5s;
