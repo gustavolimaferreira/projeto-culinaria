@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+
+@font-face {
+    font-family: campana;
+    src: url(../fontes/CampanaScript.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --cor0:#f8f7e5;
+    --cor1:#CBDFBD;
+    --cor2:#D4E09B;
+    --cor3:#F19C79;
+    --cor4:#e7717b;
+    --cor5:#A44A3F;
+    --cor6:#47150e;
+
+    --font-padrao: Verdana Helvetica, Arial, sans-serif;
+    --font-destaque: 'campana', cursive;
+    --font-titulos: 'Faculty Glyphic', cursive;
+    --font-cursiva: 'Imperial Script', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(250, 176, 176), rgb(252, 225, 225));
+    font-family: var(--font-padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    min-height: 150px;    
+    padding-top: 20px;
+}
+
+header > h1 {
+    text-align: center;
+    color: white;
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    font-size: 5em;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 0px rgba(0,0,0, 0.267);
+}
+
+header > p {
+    font-family:var(--font-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+    text-align: center;
+}
+
+nav {
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+main.escolha {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    columns: 2;
+}
+
+main > a {
+    display: block;
+    height: 500px;
+    width: 300px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.opcao {
+    padding-left: 10px;
+    padding-top: 20px;
+    width: 300px;
+    height: 500px;
+    background-image: url('../imagens/urso-500.jpg');
+}
+
+
+
+
+
+
+section#s4 {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 8vh;
+    line-height: 2em;
+    font-family: var(--font-titulos);
+    font-size: 3.5vw;
+    font-weight: normal;
+    background-color: #333333;    
+    box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+}
+
+section#s4 > h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, var(--cor4), #333333);
+    padding: 20px;
+}
+
+li > a {
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+li > a:hover {
+    color: var(--cor3);
+    text-shadow: 1px 1px 0px rgba(0,0,0, 0.267);
+}
+
+li {
+    color: var(--cor4);
+}
+
+footer {
+    background-color: var(--cor4);
+    color: var(--cor1);
+    text-align: center;
+    padding: 3px;
+    font-size: 1.1em;
+}
+#final {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+#final:hover {
+    color: var(--cor3);
+    text-shadow: 1px 1px 0px rgba(0,0,0, 0.267);
+}
