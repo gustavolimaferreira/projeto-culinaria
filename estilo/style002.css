@@ -32,7 +32,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, rgb(250, 176, 176), rgb(252, 225, 225));
+    background-image: linear-gradient(to right, rgb(248, 197, 197), rgb(252, 225, 225));
     font-family: var(--font-padrao);
 }
 
@@ -126,12 +126,10 @@ div.opcao > h1 {
 
 section#s4 {
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.685);
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    padding-left: 8vh;
-    line-height: 2em;
+    padding-bottom: 10px;
+    height: 225px;
     font-family: var(--font-titulos);
-    font-size: 3.5vw;
+    font-size: 1em;
     font-weight: normal;
     background-color: #333333;    
     box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
@@ -139,18 +137,24 @@ section#s4 {
 
 section#s4 > h2 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
     color: white;
     margin-bottom: 20px;
     background-image: linear-gradient(to right, var(--cor4), #333333);
-    padding: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 li > a {
     color: white;
-    font-size: 1em;
+    font-size: 2em;
     text-decoration: none;
     transition-duration: 0.5s;
 }

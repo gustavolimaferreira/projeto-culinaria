@@ -32,7 +32,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, rgb(250, 176, 176), rgb(252, 225, 225));
+    background-image: linear-gradient(to right, rgb(248, 197, 197), rgb(252, 225, 225));
     font-family: var(--font-padrao);
 }
 
@@ -94,7 +94,7 @@ section#s1 {
     font-size: 3.5vw;
     font-weight: normal;
     background-color: rgb(51, 51, 51);
-    color: var(--cor4);
+    color: white;
     box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
     background-size: cover;
     background-attachment: fixed;
@@ -170,20 +170,20 @@ section#s3 h2 {
     text-shadow: 2px 2px 0px rgba(0,0,0, 0.267);
 }
 
-section#s3 article {
-    break-inside: avoid;
+section#s3 > article {
     margin-bottom: 20px;
 }
 
 main#dts3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(435px, 1fr));
-    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 article.art1 {
+    flex: auto;
     display: flex;
-    align-items: start;    
+    align-items: center;
     width: 100%;
     max-width: 400px;
     padding: 10px;
@@ -191,17 +191,20 @@ article.art1 {
 
 a > article > picture > img {
     border-radius: 10px;
+    flex: auto;
 }
 
 div {
     margin-left: 15px;
+    flex: auto;
 }
 
 div > p {
-    text-align: justify;    
+    text-align: justify;  
 }
 
 main > a {
+    display: flex;
     text-decoration: none;
     color: var(--cor6);   
     transition-duration: 0.5s;
@@ -214,14 +217,28 @@ main > a:hover {
     border-radius: 10px;
 }
 
+#seta {
+    text-align: center;
+    margin: 5px;
+}
+
+p#seta > a > i {
+    font-size: 4em;
+    color: var(--cor6);
+    transition-duration: 0.5s;
+}
+
+p#seta > a > i:hover {
+    color: var(--cor3);
+    text-shadow: 1px 1px 0px rgba(0,0,0, 0.267);
+}
+
 section#s4 {
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.685);
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    padding-left: 8vh;
-    line-height: 2em;
+    padding-bottom: 10px;
+    height: 225px;
     font-family: var(--font-titulos);
-    font-size: 3.5vw;
+    font-size: 1em;
     font-weight: normal;
     background-color: #333333;    
     box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
@@ -229,18 +246,24 @@ section#s4 {
 
 section#s4 > h2 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
     color: white;
     margin-bottom: 20px;
     background-image: linear-gradient(to right, var(--cor4), #333333);
-    padding: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 li > a {
     color: white;
-    font-size: 1em;
+    font-size: 2em;
     text-decoration: none;
     transition-duration: 0.5s;
 }
